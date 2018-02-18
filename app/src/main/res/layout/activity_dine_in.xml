@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.intan_1202154351_modul2.DineIn">
+
+    <TextView
+        android:id="@+id/textViewCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="16dp"
+        android:text="Detail Customer :"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginStart="47dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCustomer" />
+
+
+    <TextView
+        android:id="@+id/textViewMeja"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="49dp"
+        android:text="No Meja :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPilihPesan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNama" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="92dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPilihPesan"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMeja"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNama" />
+
+    <Button
+        android:id="@+id/buttonPilihPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="186dp"
+        android:text="Pilih Pesanan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3"/>
+
+</android.support.constraint.ConstraintLayout>
