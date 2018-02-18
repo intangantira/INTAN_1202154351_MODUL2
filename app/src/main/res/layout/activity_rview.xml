@@ -5,49 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<ImageView
-    android:id="@+id/Gambar"
-    android:layout_width="125dp"
-    android:layout_height="125dp"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentTop="true"
-    android:layout_marginLeft="17dp"
-    android:layout_marginStart="17dp"
-    android:layout_marginTop="12dp"
-    android:contentDescription="todo"
-    tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="16dp" />
+    <ImageView
+        android:id="@+id/Gambar"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="todo"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-<TextView
-    android:id="@+id/Nama"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignTop="@+id/Gambar"
-    android:layout_marginLeft="31dp"
-    android:layout_marginStart="31dp"
-    android:layout_marginTop="13dp"
-    android:layout_toEndOf="@+id/Gambar"
-    android:layout_toRightOf="@+id/Gambar"
-    android:text="TextView"
-    android:textSize="18sp"
-    android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Harga"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-<TextView
-    android:id="@+id/Harga"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignLeft="@+id/editTextNama"
-    android:layout_alignStart="@+id/editTextNama"
-    android:layout_below="@+id/editTextNama" />
+    <TextView
+        android:id="@+id/Harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="148dp" />
 
-<TextView
-    android:id="@+id/id"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignLeft="@+id/Harga"
-    android:layout_alignStart="@+id/Harga"
-    android:layout_below="@+id/Harga" />
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Harga"
+        android:layout_alignStart="@+id/Harga"
+        android:layout_below="@+id/Harga" />
 
 </RelativeLayout>
 
